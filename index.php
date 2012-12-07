@@ -22,3 +22,7 @@ $classLoader->register();
 
 // algumas configurações da aplicação
 require_once "bootstrap.php";
+
+use Application\Controllers\FrontController as FrontController;
+
+FrontController::dispatch($_GET);
