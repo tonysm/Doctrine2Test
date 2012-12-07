@@ -16,3 +16,9 @@ criar um arquivo __doctrine.php__ com o conteúdo:
 	set_include_path(__DIR__ . PS . __DIR__ . DS . "Doctrine" . PS . get_include_path());
 
 	require "bin" . DS . "doctrine-pear.php";
+
+Coloque este arquivo na pasta do Doctrine que você baixou do site e execute o seguinte comando nesse projeto (github):
+
+	php DOCTRINE_DOWNLOADED_PATH/doctrine.php orm:schema-tool:create
+
+Com isso, o doctrine irá procurar o arquivo cli-config.php no projeto e criará todas as tabelas da entidates mapeadas.
