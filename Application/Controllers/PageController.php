@@ -11,7 +11,7 @@ abstract class PageController
 
 	public function __get($prop)
 	{
-		return $viewAttributes[$prop];
+		return $this->viewAttributes[$prop];
 	}
 
 	public function __set($prop, $value)

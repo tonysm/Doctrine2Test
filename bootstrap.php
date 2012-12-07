@@ -27,4 +27,4 @@ $config->setProxyNamespace('Application\Proxies');
 
 $entityManager = EntityManager::create($conn, $config);
 
-$GLOBLAS['em'] = $entityManager;
+$GLOBALS['em'] = $entityManager;

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastro de Pessoa</title>
+</head>
+<body>
+	<h1>Cadastro de Pessoa</h1>
+	<form action="index.php?controller=pessoa&action=save" method="POST">
+		Nome: <input value="<?=$this->pessoa->getNome();;?>" type="text" name="nome"> <br>
+		E-mail: <input value="<?=$this->pessoa->getEmail();?>" type="text" name="email"> <br>
+		Data de Nascimento: <input value="<?=$this->pessoa->getDataNascimento();?>" type="text" name="dataNascimento"> <br>
+
+		<input type="hidden" name="id" value="<?=$this->pessoa->getId();?>">
+		<input type="submit" value="salvar">
+	</form>
+</body>
+</html>

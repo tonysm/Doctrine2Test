@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CRUD pessoas</title>
+</head>
+<body>
+	<h1>Gerenciar Pessoas</h1>
+	<a href="index.php?controller=pessoa&action=editar">Nova Pessoa</a>
+	<table>
+		<thead>
+			<tr>
+				<th>Nome</th>
+				<th>Data de Nascimento</th>
+				<th>E-mail</th>
+				<th colspan=2>Ações</th>
+			</tr>
+		</thead>
+		<tbody>
+			<?php foreach($this->pessoas as $pessoa): ?>
+			<tr>
+				<td><?=$pessoa->getNome();?></td>
+				<td><?=$pessoa->getDataNascimento();?></td>
+				<td><?=$pessoa->getEmail();?></td>
+				<td>
+					<a href="index.php?controller=pessoa&action=editar&id=<?=$pessoa->getId();?>">Editar</a>
+				</td>
+				<td>
+					<a href="index.php?controller=pessoa&action=excluir&id=<?=$pessoa->getId();?>">Excluir</a>
+				</td>
+			</tr>
+			<?php endforeach; ?>
+		</tbody>
+	</table>
+</body>
+</html>
