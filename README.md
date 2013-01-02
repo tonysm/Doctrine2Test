@@ -21,4 +21,4 @@ Coloque este arquivo na pasta do Doctrine que você baixou do site e execute o s
 
 	php DOCTRINE_DOWNLOADED_PATH/doctrine.php orm:schema-tool:create
 
-Com isso, o doctrine irá procurar o arquivo cli-config.php no projeto e criará todas as tabelas da entidates mapeadas.
+Com isso, o doctrine irá procurar o arquivo cli-config.php no projeto e criará todas as tabelas das entidades mapeadas.
